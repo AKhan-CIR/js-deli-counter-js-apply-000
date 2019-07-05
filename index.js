@@ -11,6 +11,7 @@ function takeANumber(otherDeli,name){
   return "There is nobody waiting to be served!";
   }
   else{ customer = [line][0].shift();
+<<<<<<< HEAD
   return "Currently serving " + `${customer}` + ".";
   }
   
@@ -26,6 +27,13 @@ function nowServing(deliLine){
   
 }
 
+=======
+  }
+  return "Currently serving: " + `${customer}` + ".";
+}
+
+
+>>>>>>> 013fb9d9c30beddfe0c71ad1f9338092050ee0b5
 var joined_list = [];
 function currentLine(line){
      if (line.length === 0){
@@ -33,9 +41,15 @@ function currentLine(line){
         }
     else {
         for (let i = 0; i<line.length;i++){
+<<<<<<< HEAD
            joined_list.push(" "+ (i+1) + ". " +line[i]);
               }
         return ("The line is currently:"+ joined_list);
+=======
+           joined_list.push((i+1) + ". " +line[i]);
+              }
+        return ("The line is currently: "+ joined_list);
+>>>>>>> 013fb9d9c30beddfe0c71ad1f9338092050ee0b5
           }
   }
     
