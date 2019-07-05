@@ -1,6 +1,20 @@
-function takeANumber(katzDeli,name){
-    katzDeli.push(name);
-     return "Welcome, "+ `${name}` +"."+" You are number " + katzDeli.length + " in line.";}
+function takeANumber(deli,name){
+    deli.push(name);
+     return "Welcome, "+ `${name}` +"."+" You are number " + deli.length + " in line.";}
+
+
+var i = 0
+function takeANumber(deli){
+  i++;
+  deli.push(i)
+  return `Welcome you have ticket number ${i}`
+
+}
+ 
+//numbers increasing 
+//nowserving removes customers
+//you are number ....
+
 
 function takeANumber(otherDeli,name){
     otherDeli.push(name);
@@ -10,9 +24,9 @@ function takeANumber(otherDeli,name){
     if (line.length === 0){
   return "There is nobody waiting to be served!";
   }
-  else{ customer = [line][0].shift();
+  else{ customer = line.shift();
 <<<<<<< HEAD
-  return "Currently serving " + `${customer}` + ".";
+  return `Currently serving + ${customer}.`;
   }
   
 }
